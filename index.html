@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Your Mood</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 200px;
+            margin: 3px;        
+        }
+
+        h1 {
+            text-align: center;
+            color:#E53935;
+            margin-bottom: 3em;
+            margin-top: 1em;
+        }
+
+        span {
+            color:white;
+            background-color:#E53935;
+            font-size: 2.39em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header"><h1><span>PICK ONE</span> <br>TO BOOST YOUR MOOD</h1></div>
+    <div class="container">
+        <div><img id="one" src="imgs/1.png" alt="First Option"></div>
+        <div><img id="two" src="imgs/2.png" alt="Second Option"></div>
+        <div><img id="three" src="imgs/3.png" alt="Third Option"></div>
+        <div><img id="four" src="imgs/4.png" alt="Fourth Option"></div>
+        <div><img id="five" src="imgs/5.png" alt="Fifth Option"></div>
+        <div><img id="six" src="imgs/6.png" alt="Sixth Option"></div>
+        <div><img id="seven" src="imgs/7.png" alt="Seventh Option"></div>
+    </div>
+    <script>
+       /*  document.getElementById("one").onclick=function(){
+            document.getElementById("one").src="imgs/bath.jpg";
+            document.getElementById("one").style.borderRadius = "50%";
+        }
+        document.getElementById("two").onclick=function(){
+            document.getElementById("two").src="imgs/care.jpg";
+            document.getElementById("two").style.borderRadius = "50%";
+        }
+        document.getElementById("three").onclick=function(){
+            document.getElementById("three").src="imgs/cook.jpg";
+            document.getElementById("three").style.borderRadius = "50%";
+        }
+        document.getElementById("four").onclick=function(){
+            document.getElementById("four").src="imgs/friendship.jpg";
+            document.getElementById("four").style.borderRadius = "50%";
+        }
+        document.getElementById("five").onclick=function(){
+            document.getElementById("five").src="imgs/music.jpg";
+            document.getElementById("five").style.borderRadius = "50%";
+        }
+        document.getElementById("six").onclick=function(){
+            document.getElementById("six").src="imgs/read.jpg";
+            document.getElementById("six").style.borderRadius = "50%";
+        }
+        document.getElementById("seven").onclick=function(){
+            document.getElementById("seven").src="imgs/yoga.jpg";
+            document.getElementById("seven").style.borderRadius = "50%";
+        } */
+
+        // fonksiyonu tanımlayalım
+function setImgProperties(img, src, radius) {
+  img.src = src;
+  img.style.borderRadius = radius;
+}
+
+// resim öğelerini alalım
+const one = document.getElementById("one");
+const two = document.getElementById("two");
+const three = document.getElementById("three");
+const four = document.getElementById("four");
+const five = document.getElementById("five");
+const six = document.getElementById("six");
+const seven = document.getElementById("seven");
+
+// her bir resim öğesi için tıklama olayını tanımlayalım
+one.onclick = function() {
+  setImgProperties(one, "imgs/bath.jpg", "50%");
+}
+
+two.onclick = function() {
+  setImgProperties(two, "imgs/care.jpg", "50%");
+}
+
+three.onclick = function() {
+  setImgProperties(three, "imgs/cook.jpg", "50%");
+}
+
+four.onclick = function() {
+  setImgProperties(four, "imgs/friendship.jpg", "50%");
+}
+
+five.onclick = function() {
+  setImgProperties(five, "imgs/music.jpg", "50%");
+}
+
+six.onclick = function() {
+  setImgProperties(six, "imgs/read.jpg", "50%");
+}
+
+seven.onclick = function() {
+  setImgProperties(seven, "imgs/yoga.jpg", "50%");
+}
+    </script>
+</body>
+</html>
